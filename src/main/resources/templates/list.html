@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <title>List</title>
+</head>
+<body >
+<h1>Palindromic List</h1>
+<br/>
+<a href="/add">Add more</a>
+<br/>
+
+<div th:each="toadd:${toadds}">
+
+    <h3 th:inline="text">[[${toadd.id}]] The longest palindromic of [[${toadd.mainString}]] is [[${toadd.subString}]]</h3>
+    <br/>
+</div>
+
+<!-- Custom scripts for this template -->
+
+</body>
+</html>
